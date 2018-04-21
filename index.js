@@ -85,3 +85,17 @@ function main() {
 }
 
 main()
+
+
+function botTester() {
+  const DIR = [[0, 1],    [0, -1],   [1, 0],    [-1, 0]]
+  const pos = [[249, 250],[249, 248],[250, 249],[248, 249]]
+
+  setInterval(() => {
+    pos.forEach((p, idx) => {
+      p[0] += DIR[idx][0]
+      p[1] += DIR[idx][1]
+      setTile(p[0], p[1], '0d3')
+    })
+  }, 1000)
+}
