@@ -1,5 +1,5 @@
 const config = {
-  WSSERVERENDPOINT: 'ws://localhost:8080',
+  WSSERVERENDPOINT: 'ws://mayisgr8.win:8080',
   DEFAULTCOLOR: '#eee',
   ROWCOUNT: 500,
   COLCOUNT: 500,
@@ -70,7 +70,7 @@ function wsInit() {
 
 
 function setTile(x, y, c, id=1) {
-  fetch(`http://localhost:3000/setTile?x=${x}&y=${y}&c=${c}&id=${id}`, {
+  fetch(`http://mayisgr8.win/setTile?x=${x}&y=${y}&c=${c}&id=${id}`, {
     method: 'Post',
     mode: 'no-cors',
   })
